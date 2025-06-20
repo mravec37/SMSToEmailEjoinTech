@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <link rel="stylesheet" href="auth.css">
+  <meta charset="UTF-8">
+  <title>Prihlasovanie</title>
+</head>
+<body>
+<div class="auth-container">
+  <h1>Prihlásenie</h1>
+
+  <div id="signup-section">
+    <h2>Registrácia</h2>
+    <form id="signup-form">
+      <input type="text" id="signup-username" placeholder="Používateľské meno" required>
+      <input type="email" id="signup-email" placeholder="Email" required>
+      <input type="password" id="signup-password" placeholder="Heslo" required>
+      <button type="submit">Zaregistrovať sa</button>
+    </form>
+  </div>
+
+  <div id="verify-section" style="display: none;">
+    <h2>Overenie účtu</h2>
+    <div class="verify-group">
+      <input type="text" id="verify-code" placeholder="Overovací kód">
+      <button id="verify-btn">Overiť</button>
+      <button id="resend-btn" style="margin-top: 0.5rem; background-color: #777;">Znovu poslať kód</button>
+    </div>
+  </div>
+
+  <div id="login-section">
+    <h2>Prihlásenie</h2>
+    <form id="login-form">
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Heslo" required>
+      <button type="submit">Prihlásiť sa</button>
+    </form>
+  </div>
+
+  <div id="message"></div>
+</div>
+
+<script src="authJS.js"></script>
+</body>
+</html>
